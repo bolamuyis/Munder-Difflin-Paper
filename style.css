@@ -4,39 +4,55 @@
     font-family: 'Open Sans', sans-serif;
 }
 body {
-    background-color: rgb(117, 117, 117);
+    background-color: bisque;
 }
 /* This is the #wrapper id that centers all the content  */
 #wrapper {
     width: 1250px;
     margin: 40px auto;
+    background-color: bisque;
 }
 header {
     background-color:bisque;
-    height: 200px;
     padding: 20px;
     font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    width: 80%;
 }
-header p {
-    font-size: 1.4em;
-    float: left;
-}
-header img {
+header #logContacts {
+    font-size: 1em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    float: right;
+    padding: 40px 0 40px 0;
     width: 400px;
-    padding: 0 20px 0 0;
-    float: left;
+    text-align: right;
+    color: brown;
+}
+#log {
+    flex: auto;
+    padding: 5px 0 0 0;
+}
+#contact {
+    flex: auto;
+    padding: 5px 0 0 0;
+}
+input {
+    padding: 5px;
+}
+button {
+    color: #ffffff;
+    background-color: brown;
+    padding: 5px;
+    text-transform: uppercase;
 }
 #logo {
     font-family: 'Roboto', sans-serif;
-    /* border-radius: 20px; */
-    background-color: black;
+    background-color: brown;
     width: 150px;
-    height: 150px;
     float: left;
-    text-align: center;
-    margin: 0 20px 0 0;
-    display: flex;
-    flex-direction: column;
+    margin: 0 0 10px 0;
 }  
 #logo p {
     font-size: 1em;
@@ -45,28 +61,60 @@ header img {
     text-transform: uppercase;
     display: block;
     flex-direction: column;
+    text-align: center;
     flex: auto;
 }
+header #logo p:nth-child(1) {
+    margin: 20px 0 0 0;
+    letter-spacing: 0.20em;
+}
+header #logo p:nth-child(2) {
+    letter-spacing: 0.27em;
+}
+header #logo p:nth-child(3) {
+    margin: 0 0 20px 0;
+    letter-spacing: 0.5em;
+}
+
 nav ul {
-    background-color: blue;
-    height: 60px;
+    background-color: bisque;
     text-align: center;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    border-top: brown 2px dotted;
+    border-bottom: brown 2px dotted;
+    font-weight: bolder;
+    width: 80%;
+    margin: 0 auto;
 }
 nav li {
     display: inline-block;
-    color: white;
-    background: red;
+    background: bisque;
     font-size: 1em;
     flex: auto;
-    margin: 20px 20px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    padding: 10px; 
+}
+nav li a {
+    text-decoration: none;
+    color: brown;
+    padding: 20px;
+}
+nav li a:hover {
+    color: #ffffff;
+    background-color: brown;
+    padding: 20px;
 }
 main {
     background-color: bisque;
     height: 800px;
+}
+#gallery {
+    height: 400px;
+    width: 1000px;
+    background-color: brown;
+    margin: 10px auto 0 auto;
+    color: #ffffff;
 }
 aside {
     background-color: blue;
