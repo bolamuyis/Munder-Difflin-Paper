@@ -97,10 +97,13 @@ nav li {
 nav li a {
     text-decoration: none;
     color: brown;
+    display: block;
+    padding: 5px 0;
 }
 nav li a:hover {
     color: #ffffff;
     background-color: brown;
+    display: block;
 }
 #container {   
     background-color: bisque;
@@ -108,14 +111,29 @@ nav li a:hover {
 }
 main {
     width: 650px;
+    margin: 0 40px 0 0;
+    border-radius: 10px;
+}
+main .sections h2 {
+    display: block;
+    border-bottom: brown 2px dotted;
+    margin: 0 20px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 0.165em;
+    color: brown;
+}
+main .sections p {
+    margin: 10px 20px;
 }
 aside {
     width: 350px;
     /* height: 400px; */
-    border-left: 2px dotted brown;
+    /* border-left: 2px dotted brown; */
+    margin: 20px 0;
 }
 p {
-    margin: 1em;
+    margin: 25px 20px;
 }
 #gallery {
     height: 400px;
@@ -124,10 +142,51 @@ p {
     margin: 10px auto 0 auto;
     color: #ffffff;
 }
+#join {
+    width: 320px;
+    height: 325px;
+    text-align: center;
+    color: #ffffff;
+    border: brown 2px dotted;
+    margin: 10px 0 0 0;
+}
+#join h2 {
+    display: block;
+    text-transform: uppercase;
+    border-bottom: brown 2px dotted;
+    color: brown;
+    font-weight: bolder;
+    font-size: 2em;
+}
+#join p {
+    color: brown;
+    text-align: left;
+    padding: 0 10px;
+}
+#testimonies {
+    width: 320px;
+    height: 325px;
+    text-align: center;
+    color: #ffffff;
+    border: brown 2px dotted;
+    margin: 20px 0 0 0;
+}
+#testimonies h2 {
+    display: block;
+    text-transform: uppercase;
+    border-bottom: brown 2px dotted;
+    color: brown;
+    font-weight: bolder;
+    font-size: 2em;
+}
+#testimonies p {
+    color: brown;
+    text-align: left;
+    padding: 0 10px;
+}
 footer {
     background-color: brown;
-    height: 60px;
-    margin: 0 auto;
+    margin: 10px auto 10px auto;
     width: 1000px;
     text-align: center;
     display: flex;
@@ -135,4 +194,7 @@ footer {
 footer p {
     color: bisque;
     flex: auto;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 0.8em;
 }
