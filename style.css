@@ -86,6 +86,7 @@ nav ul {
     font-weight: bolder;
     width: 1000px;
     margin: 0 auto;
+    
 }
 nav li {
     display: inline-block;
@@ -93,17 +94,24 @@ nav li {
     font-size: 1em;
     flex: auto;
     text-transform: uppercase;
+    
 }
 nav li a {
     text-decoration: none;
     color: brown;
     display: block;
     padding: 5px 0;
+    /* animation-name: navButton;
+    animation-duration: 20s; */
 }
 nav li a:hover {
     color: #ffffff;
     background-color: brown;
     display: block;
+    animation-name: navButton;
+    animation-fill-mode: backwards;
+    animation-duration: 700ms;
+
 }
 #container {   
     background-color: bisque;
@@ -113,6 +121,17 @@ main {
     width: 650px;
     margin: 0 40px 0 0;
     border-radius: 10px;
+}
+main article {
+    display: block;
+    margin: 20px 0 30px 0;
+}
+main article p {
+    margin: 10px 20px;
+}
+main .sections {
+    display: block;
+    margin: 0 0 30px 0;
 }
 main .sections h2 {
     display: block;
@@ -125,6 +144,11 @@ main .sections h2 {
 }
 main .sections p {
     margin: 10px 20px;
+}
+article img {
+    float: left;
+    width: 50px;
+    margin: 0 20px;
 }
 aside {
     width: 350px;
@@ -184,6 +208,7 @@ p {
     text-align: left;
     padding: 0 10px;
 }
+
 footer {
     background-color: brown;
     margin: 10px auto 10px auto;
@@ -198,3 +223,22 @@ footer p {
     padding: 10px 0;
     font-size: 0.8em;
 }
+img.spin {
+    animation: spin;
+    animation-duration: 500ms;
+}
+@keyframes navButton {   
+    0% { background-color: bisque;    
+    } 
+    100% {
+      background-color: brown;
+    }
+  }
+
+  @keyframes spin {   
+    0% { 
+    } 
+    100% {
+      transform: rotate(360deg);
+    }
+  }
