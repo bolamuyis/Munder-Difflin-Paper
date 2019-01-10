@@ -11,3 +11,4 @@ This is a paper company that caters to a community of artist who like towork exc
 For this project I employed the following programs
   - HTML
   - Javascript
+  - CSS
