@@ -9,4 +9,5 @@ This is a paper company that caters to a community of artist who like towork exc
 
 # Languages used
 For this project I employed the following programs
-HTML and Javascript
+  - HTML
+  - Javascript
